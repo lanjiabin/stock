@@ -223,27 +223,39 @@ public class FloatingService extends Service {
                 if (increase1 < 0) {
                     mOptions5.setTextColor(Color.GREEN);
                     mOptions2.setTextColor(Color.GREEN);
-                    mOptions8.setTextColor(Color.GREEN);
                     mOptions4.setTextColor(Color.GREEN);
                     mOptions6.setTextColor(Color.GREEN);
-                    mOptions7.setTextColor(Color.GREEN);
 
                 }
                 if (increase1 == 0) {
                     mOptions5.setTextColor(Color.BLACK);
                     mOptions2.setTextColor(Color.BLACK);
-                    mOptions8.setTextColor(Color.BLACK);
                     mOptions4.setTextColor(Color.BLACK);
                     mOptions6.setTextColor(Color.BLACK);
-                    mOptions7.setTextColor(Color.BLACK);
                 }
 
                 if (increase1 > 0) {
                     mOptions5.setTextColor(Color.RED);
                     mOptions2.setTextColor(Color.RED);
-                    mOptions8.setTextColor(Color.RED);
                     mOptions4.setTextColor(Color.RED);
                     mOptions6.setTextColor(Color.RED);
+                }
+
+
+                //涨跌文字变化
+                if (increase2 < 0) {
+                    mOptions8.setTextColor(Color.GREEN);
+                    mOptions7.setTextColor(Color.GREEN);
+
+                }
+                if (increase2 == 0) {
+
+                    mOptions8.setTextColor(Color.BLACK);
+                    mOptions7.setTextColor(Color.BLACK);
+                }
+
+                if (increase2 > 0) {
+                    mOptions8.setTextColor(Color.RED);
                     mOptions7.setTextColor(Color.RED);
                 }
 
